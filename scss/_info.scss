@@ -27,7 +27,7 @@
     }
   }
   &-growth {
-    margin-top: 50px;
+    margin: 50px 0 32px;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -41,12 +41,17 @@
       height: 196px;
       font-weight: 500;
       border-radius: 15px;
-      box-shadow: 6px 5px 5px 4px rgba(3, 3, 3, 0.03);
+      box-shadow: 6px 5px 5px 4px #03030308;
+      transition: all .5s;
+    cursor: pointer;
+      &:hover {
+        box-shadow: 6px 5px 5px 4px #03030357;
+      }
       &:first-of-type > &__line {
         width: 81px;
         height: 5px;
         background-color: #14b17b;
-        box-shadow: -3px 0px 2px rgba(20, 209, 123, 0.25);
+        box-shadow: -3px 0px 2px #14d17b40;
         border-radius: 5px;
         transform: rotate(-90deg) translate(60px, -40px);
       }
@@ -55,7 +60,7 @@
         width: 81px;
         height: 5px;
         background-color: #ff3d7a;
-        box-shadow: -3px 0px 2px rgba(20, 209, 123, 0.25);
+        box-shadow: -3px 0px 2px #14d17b40;
         border-radius: 5px;
         transform: rotate(-90deg) translate(60px, -40px);
       }
@@ -63,8 +68,12 @@
         font-size: 20px;
       }
       &__text {
+        margin-top: 20px;
         color: #c4c4c4;
         font-size: 14px;
+        &::first-letter {
+          text-transform: uppercase;
+        }
       }
     }
   }

@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 .profile {
-  padding: 40px 0 30px; }
+  padding: 40px 0 30px;
+  color: #fff;
+  font-size: 12px; }
   .profile > .wrapper {
     display: flex;
     align-items: center; }
   .profile__image {
     border-radius: 16px; }
   .profile__text {
-    margin-left: 20px;
-    color: #fff;
-    font-size: 12px; }
+    margin-left: 20px; }
 
 .balance {
   padding-bottom: 36px; }
@@ -28,25 +28,49 @@
     justify-content: space-between;
     list-style-type: none; }
     .balance-type-item {
-      border-radius: 15px;
-      width: 150px;
-      height: 196px;
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      width: 150px;
+      height: 196px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 1px 1px 5px 1px #000;
+      transition: all .5s; }
+      .balance-type-item:hover {
+        box-shadow: 1px 1px 5px 5px #000; }
+      .balance-type-item:first-of-type > .balance-type-item__sum::before {
+        content: "$22.00";
+        position: absolute;
+        top: 20%;
+        left: -20px;
+        color: #ffffff32;
+        font-size: 80px;
+        font-weight: 500; }
+      .balance-type-item:last-of-type > .balance-type-item__sum::before {
+        content: "$135.00";
+        position: absolute;
+        top: 20%;
+        left: -20px;
+        color: #ffffff32;
+        font-size: 80px;
+        font-weight: 500; }
       .balance-type-item--crypto {
         background: url("../assets/crypto_bg.png"); }
       .balance-type-item--dollars {
         background: url("../assets/dollars_bg.png"); }
       .balance-type-item__sum {
+        margin-bottom: 60px;
         color: #fff;
-        font-size: 20px;
-        margin-bottom: 60px; }
+        font-size: 20px; }
       .balance-type-item__text {
+        margin-bottom: 20px;
         color: #fff;
-        font-size: 12px;
-        margin-bottom: 20px; }
+        font-size: 12px; }
+        .balance-type-item__text::first-letter {
+          text-transform: uppercase; }
 
 .info {
   background-color: #fff;
@@ -71,7 +95,7 @@
         display: flex;
         flex-direction: column; }
   .info-growth {
-    margin-top: 50px;
+    margin: 50px 0 32px;
     display: flex;
     justify-content: space-between;
     list-style-type: none; }
@@ -85,26 +109,33 @@
       height: 196px;
       font-weight: 500;
       border-radius: 15px;
-      box-shadow: 6px 5px 5px 4px rgba(3, 3, 3, 0.03); }
+      box-shadow: 6px 5px 5px 4px #03030308;
+      transition: all .5s;
+      cursor: pointer; }
+      .info-growth-item:hover {
+        box-shadow: 6px 5px 5px 4px #03030357; }
       .info-growth-item:first-of-type > .info-growth-item__line {
         width: 81px;
         height: 5px;
         background-color: #14b17b;
-        box-shadow: -3px 0px 2px rgba(20, 209, 123, 0.25);
+        box-shadow: -3px 0px 2px #14d17b40;
         border-radius: 5px;
         transform: rotate(-90deg) translate(60px, -40px); }
       .info-growth-item:last-of-type > .info-growth-item__line {
         width: 81px;
         height: 5px;
         background-color: #ff3d7a;
-        box-shadow: -3px 0px 2px rgba(20, 209, 123, 0.25);
+        box-shadow: -3px 0px 2px #14d17b40;
         border-radius: 5px;
         transform: rotate(-90deg) translate(60px, -40px); }
       .info-growth-item__num {
         font-size: 20px; }
       .info-growth-item__text {
+        margin-top: 20px;
         color: #c4c4c4;
         font-size: 14px; }
+        .info-growth-item__text::first-letter {
+          text-transform: uppercase; }
 
 .btn {
   margin: 17px auto 11px;
@@ -119,9 +150,18 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif; }
 
+h1 {
+  position: absolute;
+  top: -100px;
+  font-size: 0; }
+
 body {
   background-color: #2A2A46; }
 
 .wrapper {
   max-width: 342px;
   margin: 0 auto; }
+
+@media (max-width: 342px) {
+  .wrapper {
+    padding: 0 10px; } }
