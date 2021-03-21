@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.profile {
+  padding: 40px 0 30px; }
+  .profile > .wrapper {
+    display: flex;
+    align-items: center; }
+  .profile__image {
+    border-radius: 16px; }
+  .profile__text {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 12px; }
+
+.balance {
+  padding-bottom: 36px; }
+  .balance-head {
+    margin-bottom: 34px;
+    display: flex;
+    flex-direction: column; }
+    .balance-head__text {
+      color: #aeaeae;
+      font-size: 12px; }
+    .balance-head__sum {
+      color: #fdf5f5;
+      font-size: 20px; }
+  .balance-type {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; }
+    .balance-type-item {
+      border-radius: 15px;
+      width: 150px;
+      height: 196px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end; }
+      .balance-type-item--crypto {
+        background: url("../assets/crypto_bg.png"); }
+      .balance-type-item--dollars {
+        background: url("../assets/dollars_bg.png"); }
+      .balance-type-item__sum {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 60px; }
+      .balance-type-item__text {
+        color: #fff;
+        font-size: 12px;
+        margin-bottom: 20px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  background-color: #2A2A46; }
+
+.wrapper {
+  max-width: 342px;
+  margin: 0 auto; }

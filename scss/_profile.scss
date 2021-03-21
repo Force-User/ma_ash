@@ -1,0 +1,15 @@
+.profile {
+    padding: 40px 0 30px;
+    & > .wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__image{
+        border-radius: 16px;
+    }
+    &__text {
+        margin-left: 20px;
+        color: #fff;
+        font-size: 12px;
+    }
+}

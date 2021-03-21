@@ -1,0 +1,46 @@
+.balance {
+  padding-bottom: 36px;
+  &-head {
+    margin-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+    &__text {
+      color: #aeaeae;
+      font-size: 12px;
+    }
+    &__sum {
+      color: #fdf5f5;
+      font-size: 20px;
+    }
+  }
+  &-type {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    &-item {
+      border-radius: 15px;
+      width: 150px;
+      height: 196px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      &--crypto {
+        background: url("../assets/crypto_bg.png");
+      }
+      &--dollars {
+        background: url("../assets/dollars_bg.png");
+      }
+      &__sum {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 60px;
+      }
+      &__text {
+        color: #fff;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
