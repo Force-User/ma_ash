@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Mobile App</title>
   </head>
   <body>
@@ -15,22 +15,92 @@
       </div>
     </section>
     <section class="balance">
-        <div class="wrapper">
-            <div class="balance-head">
-                <span class="balance-head__text">Your total balance is</span>
-                <span class="balance-head__sum">$162.00</span>
-            </div>
-            <ul class="balance-type">
-                <li class="balance-type-item balance-type-item--crypto">
-                    <span class="balance-type-item__sum">$22.00</span>
-                    <span class="balance-type-item__text">crypto</span>
-                </li>
-                <li class="balance-type-item balance-type-item--dollars">
-                    <span class="balance-type-item__sum">$135.00</span>
-                    <span class="balance-type-item__text">dollars</span>
-                </li>
-            </ul>
+      <div class="wrapper">
+        <div class="balance-head">
+          <span class="balance-head__text">Your total balance is</span>
+          <span class="balance-head__sum">$162.00</span>
         </div>
+        <ul class="balance-type">
+          <li class="balance-type-item balance-type-item--crypto">
+            <span class="balance-type-item__sum">$22.00</span>
+            <span class="balance-type-item__text">crypto</span>
+          </li>
+          <li class="balance-type-item balance-type-item--dollars">
+            <span class="balance-type-item__sum">$135.00</span>
+            <span class="balance-type-item__text">dollars</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="info">
+      <div class="wrapper">
+        <div class="btn"></div>
+        <span class="info__text">Recent transactions</span>
+        <ul class="info-list">
+          <li class="info-list-item">
+            <img
+              class="info-list-item__image"
+              src="assets/blue_circle.svg"
+              alt=""
+            />
+            <div class="info-list-item-desc">
+              <h3 class="info-list-item-desc__title">Grocery</h3>
+              <span class="info-list-item-desc__text"
+                >Threasure island mall</span
+              >
+            </div>
+            <span class="info-list-item__sum">$12.00</span>
+          </li>
+          <li class="info-list-item">
+            <img
+              class="info-list-item__image"
+              src="assets/polygon.svg"
+              alt=""
+            />
+            <div class="info-list-item-desc">
+              <h3 class="info-list-item-desc__title">Petrol</h3>
+              <span class="info-list-item-desc__text">Essar petrol pump</span>
+            </div>
+            <span class="info-list-item__sum">$09.00</span>
+          </li>
+          <li class="info-list-item">
+            <img
+              class="info-list-item__image"
+              src="assets/blue_square.svg"
+              alt=""
+            />
+            <div class="info-list-item-desc">
+              <h3 class="info-list-item-desc__title">Wardrobe</h3>
+              <span class="info-list-item-desc__text">Jack and jones</span>
+            </div>
+            <span class="info-list-item__sum">$63.00</span>
+          </li>
+          <li class="info-list-item">
+            <img
+              class="info-list-item__image"
+              src="assets/pink_halfcircle.svg"
+              alt=""
+            />
+            <div class="info-list-item-desc">
+              <h3 class="info-list-item-desc__title">Hardware</h3>
+              <span class="info-list-item-desc__text">Mitas shop</span>
+            </div>
+            <span class="info-list-item__sum">$14.00</span>
+          </li>
+        </ul>
+        <ul class="info-growth">
+          <li class="info-growth-item">
+              <div class="info-growth-item__line"></div>
+            <span class="info-growth-item__num">+19.06</span>
+            <span class="info-growth-item__text">Crypto</span>
+          </li>
+          <li class="info-growth-item">
+            <div class="info-growth-item__line"></div>
+            <span class="info-growth-item__num">-02.24</span>
+            <span class="info-growth-item__text">Dollars</span>
+          </li>
+        </ul>
+      </div>
     </section>
   </body>
 </html>
